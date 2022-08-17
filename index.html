@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <title>Challenge Oracle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="header">
+        <div><h1 class="title">¡Encripta tus mensajes!</h1></div>
+        <div class="logo"><img src="Logo.png"></div>
+    </div> 
+  
+<div class="boxes">
+    <section class="form box">
+        <label for="input-text">*Sólo letras minúsculas, sin acentos</label>
+        <input class="input-text" type="text" id="inputText" placeholder="Ingrese el texto aquí"> 
+        <input class="btn" type="submit" value="encriptar!" id="btnEncrypt" onclick="encrypt();">
+        <input class="btn" type="submit" value="desencriptar!" id="btnDecrypt" onclick="decrypt();">
+    </section>
+  <br>
+    <section class="msg box">
+        <label for="input-text">Mensaje encriptado:</label>
+      <input class="input-text" type="text" id="msg"></input>
+      <input class="btn" type="submit" value="copiar" id="btnCopy" onclick="copy();">
+    </section>
+</div>
+<footer>
+    <div class="footer">
+        <p>Cynthia Saucedo | © Oracle Next Education 2022</p>
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
